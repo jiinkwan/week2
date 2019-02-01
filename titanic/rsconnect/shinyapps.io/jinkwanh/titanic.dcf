@@ -5,8 +5,8 @@ account: jinkwanh
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 681846
-bundleId: 1849716
+bundleId: 1849793
 url: https://jinkwanh.shinyapps.io/titanic/
-when: 1549000778.7565
+when: 1549004854.42507
 asMultiple: FALSE
 asStatic: FALSE

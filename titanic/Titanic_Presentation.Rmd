@@ -11,6 +11,9 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 library(shiny)
 library(titanic)
+library(datasets)
+library(dplyr)
+library(ggplot2)
 train <- titanic_train
 test <- titanic_test
 
@@ -45,22 +48,29 @@ variableChoices <- c("Pclass","Sex","Embarked")
 - Explain how to use the application
 
 Application URL: https://jinkwanh.shinyapps.io/titanic/
+Presentation URL: https://jiinkwan.github.io/week2/titanic/Titanic_Presentation.htm
+Source Code URL: https://github.com/jiinkwan/week2/blob/gh-pages/titanic/
 
 ## Main Panel
 
-- Bar plot to summarize how many people survived or perished
+- Survival rates summary within the specific group
+- Interactive bar plot to summarize how many people survived or perished
 - Table data to see the detail of the people
 
 ## Plot
 
-![](plot.png)
-
-## Table
-![](table.png)
+```{r echo = FALSE}
+    g <- ggplot(train, aes_string(train$Pclass))                    
+    g <- g + geom_bar(aes(fill=train$Survived), width = 0.5) + theme(axis.text.x = element_text(angle=65, vjust=0.6)) + labs(title="Survivors")
+    g
+```
 
 ## Side Panel
 
 - Select variable to control the plot
 - Filter out the information to display
-
-![](sidebar.png)
+- Class: which class of cabin the pessenger had
+- Sex: male or female
+- SibSp: Number of siblings and spouses within the cruize
+- Parch: Number of parents and children within the cruize
+- Embarked: Where the pessengers got on the cruize(C = Cherbourg, Q = Queenstown, S = Southampton)

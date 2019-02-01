@@ -53,6 +53,7 @@ shinyUI(fluidPage(
     mainPanel(
       h3('Survivors')      
       #,h4('Variables')
+      ,dataTableOutput('meanTable')
       ,plotOutput('plot')
       ,dataTableOutput('table')
       

@@ -71,6 +71,10 @@ shinyServer(function(input, output,session) {
     g <- g + geom_bar(aes(fill=Survived), width = 0.5) + theme(axis.text.x = element_text(angle=65, vjust=0.6)) + labs(title="Survivors")
     g
   })
+  output$meanTable <- renderDataTable({
+    setNames(aggregate(as.numeric(train[,2])-1, list(train[, input$Variable]), mean),
+             c(as.character(input$Variable),"Survival Rates"))
+  })
   output$oVariable <- renderPrint({input$Variable})
   output$oClass <- renderPrint({input$PClass})
   output$oSex <- renderPrint({input$Sex})
