@@ -1,0 +1,12 @@
+name: tatanic2
+title: tatanic2
+username:
+account: jinkwanh
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 681801
+bundleId: 1849679
+url: https://jinkwanh.shinyapps.io/tatanic2/
+when: 1548999165.75323
+asMultiple: FALSE
+asStatic: FALSE

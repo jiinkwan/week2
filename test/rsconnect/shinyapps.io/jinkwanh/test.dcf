@@ -1,0 +1,12 @@
+name: test
+title: test
+username:
+account: jinkwanh
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 681808
+bundleId: 1849671
+url: https://jinkwanh.shinyapps.io/test/
+when: 1548998783.63498
+asMultiple: FALSE
+asStatic: FALSE
