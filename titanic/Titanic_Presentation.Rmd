@@ -1,7 +1,7 @@
 ---
 title: "Data Product Development - Final Presentation"
 author: "Jinkwan Hong"
-date: "2019<eb>ÖÑ 2<ec>õî 1<ec>ùº"
+date: "2019/ 02/ 01"
 output:
   ioslides_presentation: default
   slidy_presentation: default
@@ -44,7 +44,7 @@ variableChoices <- c("Pclass","Sex","Embarked")
 - Allow users to explore data and do basic EDA easily
 - Explain how to use the application
 
-Application URL: https://jinkwanh.shinyapps.io/tatanic2/
+Application URL: https://jinkwanh.shinyapps.io/titanic/
 
 ## Main Panel
 
